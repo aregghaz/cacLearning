@@ -1,0 +1,58 @@
+@import "resources/frontend/styles/variables";
+
+.root {
+    background-color: $backgroundColor;
+    padding-bottom: 50px;
+}
+
+.title {
+    text-align: center;
+    color: $titleColor;
+    font-size: 30px;
+    position: relative;
+    margin: 60px auto auto;
+    display: table;
+    font-weight: bold;
+    @media only screen and(max-width: $smallDisplay) {
+        font-size: 25px;
+    }
+    &:before {
+        content: "";
+        width: 50px;
+        height: 3px;
+        background-color: $accentColor;
+        position: absolute;
+        left: -70px;
+        top: 50%;
+        @media only screen and(max-width: $smallDisplay) {
+            width: 20px;
+            left: -30px;
+        }
+    }
+
+    &:after {
+        content: "";
+        width: 50px;
+        height: 3px;
+        background-color: $accentColor;
+        position: absolute;
+        right: -70px;
+        top: 50%;
+        @media only screen and(max-width: $smallDisplay) {
+            width: 20px;
+            right: -30px;
+        }
+    }
+}
+
+.description {
+    font-size: 18px;
+    text-align: center;
+    color: $descriptionColor;
+    max-width: 600px;
+    margin: 30px auto auto;
+    @media only screen and(max-width: $smallDisplay) {
+        font-size: 14px;
+        margin: 20px auto;
+    }
+}

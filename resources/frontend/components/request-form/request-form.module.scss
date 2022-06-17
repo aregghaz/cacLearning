@@ -1,0 +1,169 @@
+@import "resources/frontend/styles/variables";
+.container {
+    margin: 40px 0;
+}
+.formRequest {
+    padding: 0;
+}
+.form {
+    box-shadow: $boxshadow;
+    background-color: $whiteColor;
+    padding: 40px 20px;
+    border-radius: 4px;
+}
+
+.inputWrapper {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    @media only screen and(max-width: $smallDisplay) {
+        flex-direction: column;
+    }
+}
+
+.button {
+    padding: 6px 30px;
+    font-size: 15px;
+}
+
+.select {
+    width: 400px;
+    @media only screen and(max-width: $smallDisplay) {
+        display: flex;
+        align-self: center;
+        width: 100%;
+    }
+}
+.selectWrapper {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    @media only screen and(max-width: $mediumDisplay) {
+        width: 25%;
+    }
+    @media only screen and(max-width: $smallDisplay) {
+        width: 100%;
+    }
+}
+.input {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid $borderColor;
+    position: relative;
+    @media only screen and(max-width: $mediumDisplay) {
+        width: 25%;
+    }
+    @media only screen and(max-width: $smallDisplay) {
+        border-right: none;
+        width: 100%;
+    }
+}
+
+.inputBase {
+    outline: none;
+    background-color: $whiteColor;
+    border: 1px solid transparent;
+    width: 100%;
+    padding: 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    position: relative;
+    color: $placeHolderColor;
+    text-align: center;
+
+    &::placeholder {
+        color: $placeHolderColor;
+    }
+
+    @media only screen and(max-width: $largeDisplay) {
+        padding: 15px 20px 15px;
+    }
+}
+
+.buttonInside {
+    width: 10%;
+    justify-content: center;
+    display: flex;
+    @media only screen and(max-width: $mediumDisplay) {
+        display: none;
+    }
+    @media only screen and(max-width: $smallDisplay) {
+        display: flex;
+        margin-top: 10px;
+        width: 100%;
+        div,
+        button {
+            width: 100%;
+        }
+    }
+}
+
+.buttonOutside {
+    justify-content: flex-end;
+    display: none;
+    @media only screen and(max-width: $mediumDisplay) {
+        margin: 20px 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+    @media only screen and(max-width: $smallDisplay) {
+        display: none;
+    }
+}
+
+.modal {
+    position: relative;
+    width: 50%;
+    margin: auto;
+    background-color: $whiteColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    outline: none;
+    flex-direction: column;
+    @media only screen and(max-width: $mediumDisplay) {
+        width: 70%;
+    }
+    @media only screen and(max-width: $smallDisplay) {
+        width: 80%;
+    }
+}
+.closeButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.iconClose {
+    position: relative;
+    margin-left: 30px;
+    cursor: pointer;
+    z-index: 90;
+
+    svg {
+        width: 22px;
+        height: 22px;
+        rect {
+            fill: $placeHolderColor;
+        }
+    }
+
+    @media only screen and (max-width: $smallDisplay) {
+        margin-left: 25px;
+    }
+}
+.successIcon {
+    padding: 0 0 25px;
+    @media only screen and(max-width: $smallDisplay) {
+        padding: 0 0 15px;
+        transform: scale(0.8);
+    }
+}
+.successText {
+    color: $textColor;
+    font-size: 18px;
+    @media only screen and(max-width: $smallDisplay) {
+        font-size: 14px;
+    }
+}

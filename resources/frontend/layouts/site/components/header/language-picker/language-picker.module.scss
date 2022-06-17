@@ -1,0 +1,113 @@
+@import "../../../../../styles/variables";
+
+.languagePicker {
+    position: relative;
+    padding-top: 5px;
+    cursor: pointer;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    width: 50px;
+    justify-content: center;
+    margin: 0 0 0 15px;
+    @media only screen and (max-width: $smallDisplay) {
+        position: absolute;
+        top: 17px;
+        height: 30px;
+        left: 30px;
+    }
+}
+
+.buttonBlock {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    button {
+        //border: 1px solid white;
+        width: 50px;
+        padding: 5px 8px;
+        border-radius: 4px;
+        svg{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.popover {
+    position: absolute;
+    top: 90px;
+    right: -10px;
+    padding: 0 20px;
+    //background: rgba(90, 109, 106, 0.7);
+    //backdrop-filter: blur(5px);
+    z-index: 999;
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s;
+    @media only screen and (max-width: $smallDisplay) {
+        top: 34px;
+        right: -2px;
+        background: transparent;
+        backdrop-filter: none;
+        padding: 0;
+    }
+
+    .locale {
+        color: $whiteColor;
+        &:hover {
+            font-weight: bold;
+        }
+    }
+}
+
+.languagePicker {
+    &:hover {
+        .popover {
+            opacity: 1;
+        }
+    }
+}
+
+.locale {
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    font-family: $fontLight;
+    line-height: 1.6;
+    font-size: 20px;
+
+    @media only screen and (max-width: 1550px) {
+        font-size: 16px;
+    }
+    @media only screen and (max-width: $mediumDisplay) {
+        font-size: 15px;
+    }
+    @media only screen and (max-width: $smallDisplay) {
+        padding: 0 10px;
+        font-size: 15px;
+    }
+}
+
+.localeBlock {
+    padding: 10px 0;
+    @media only screen and (max-width: $smallDisplay) {
+        padding: 5px 0;
+    }
+    width: 30px;
+    svg{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.arrowIcon {
+    position: absolute;
+    top: 15px;
+}

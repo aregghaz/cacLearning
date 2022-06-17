@@ -1,0 +1,186 @@
+@import "../../../styles/variables";
+
+.root{
+    background-color: $backgroundColor;
+    padding-bottom: 50px;
+}
+
+.title {
+    text-align: center;
+    color: $titleColor;
+    font-size: 30px;
+    position: relative;
+    margin: 60px auto auto;
+    display: table;
+    font-weight: bold;
+    @media only screen and(max-width: $smallDisplay) {
+        font-size: 25px;
+    }
+    &:before {
+        content: "";
+        width: 60px;
+        height: 3px;
+        background-color: $accentColor;
+        position: absolute;
+        left: -85px;
+        top: 50%;
+        @media only screen and(max-width: $smallDisplay) {
+            width: 20px;
+            left: -30px;
+        }
+    }
+
+    &:after {
+        content: "";
+        width: 60px;
+        height: 3px;
+        background-color: $accentColor;
+        position: absolute;
+        right: -85px;
+        top: 50%;
+        @media only screen and(max-width: $smallDisplay) {
+            width: 20px;
+            right: -30px;
+        }
+    }
+}
+
+.description {
+    font-size: 18px;
+    text-align: center;
+    color: $descriptionColor;
+    max-width: 600px;
+    margin: 30px auto 15px;
+    @media only screen and(max-width: $smallDisplay) {
+        font-size: 14px;
+        margin: 20px auto;
+    }
+}
+
+.services{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.service{
+    width: 30.5%;
+    margin-top: 2%;
+    &:not(:nth-child(3n)) {
+        margin-right: 2%;
+    }
+    @media only screen and(max-width: $smallDisplay) {
+        width: 49%;
+        &:not(:nth-child(3n)) {
+            margin-right: 0;
+        }
+        &:nth-child(odd) {
+            margin-right: 2%;
+        }
+    }
+    &:before {
+        content: "";
+        float: left;
+        padding-top: 100%;
+    }
+}
+.flipCard {
+    perspective: 1000px;
+    transition: 0.5s;
+    &:hover{
+        background: $accentColor;
+        box-shadow: 0px 1px 30px #cbcbcb;
+        .image{
+            filter: brightness(999) saturate(999) grayscale(999);
+        }
+        .cardTitle{
+            color: $whiteColor;
+        }
+    }
+}
+
+.flipCardInner {
+    height: 100%;
+    position: relative;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: $boxshadow;
+    border-radius: 4px;
+
+}
+
+.flipCardFront {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.flipCardFront {
+    border-radius: 4px;
+}
+
+.image{
+    height: 80px;
+    @media only screen and(max-width: $largeDisplay) {
+        height: 65px
+    }
+    @media only screen and(max-width: $mediumDisplay) {
+        height: 55px
+    }
+    @media only screen and(max-width: $smallDisplay) {
+        height: 55px
+    }
+    @media only screen and(max-width: $extraSmallDisplay) {
+        height: 40px
+    }
+
+}
+.cardTitle{
+    text-align: center;
+    color: $cardTextColor;
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 16px;
+    padding: 25px 10px 0;
+    max-width: 360px;
+    @media only screen and(max-width: $largeDisplay) {
+        font-size: 13px;
+    }
+    @media only screen and(max-width: $mediumDisplay) {
+        font-size: 12px;
+        padding-top: 10px;
+    }
+    @media only screen and(max-width: $smallDisplay) {
+        font-size: 11px;
+    }
+    @media only screen and(max-width: $extraSmallDisplay) {
+        font-size: 9px;
+    }
+}
+.cardText{
+    text-align: center;
+    color: $cardTextColor;
+    line-height: 1.5;
+    font-width: normal;
+    font-size: 16px;
+    padding: 0 10px;
+    @media only screen and(max-width: $largeDisplay) {
+        font-size: 13px;
+    }
+    @media only screen and(max-width: $mediumDisplay) {
+        font-size: 12px;
+    }
+    @media only screen and(max-width: $smallDisplay) {
+        font-size: 13px;
+    }
+    @media only screen and(max-width: $extraSmallDisplay) {
+        font-size: 11px;
+    }
+}

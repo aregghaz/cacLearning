@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2018 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="2294px" height="840px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+viewBox="0 0 330059 120940"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+    <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="115705" y1="71616" x2="145168" y2="0">
+     <stop offset="0" stop-opacity="1" stop-color="#16968B"/>
+     <stop offset="1" stop-opacity="1" stop-color="#164D48"/>
+    </linearGradient>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2231668493264">
+   <path fill="#AFBBBC" d="M270365 1553c32968,0 59694,26725 59694,59693 0,32969 -26726,59694 -59694,59694 -32968,0 -59694,-26725 -59694,-59694 0,-32968 26726,-59693 59694,-59693zm0 30690c16018,0 29004,12985 29004,29003 0,16019 -12986,29004 -29004,29004 -16018,0 -29004,-12985 -29004,-29004 0,-16018 12986,-29003 29004,-29003z"/>
+   <polygon fill="#16968B" points="0,991 35120,991 35120,87774 123885,87774 109607,119574 35120,119574 0,119574 0,87774 "/>
+   <polygon fill="url(#id0)" points="128789,73632 90722,72892 126543,0 163794,0 "/>
+   <rect fill="#AFBBBC" transform="matrix(1 -0 0.457622 0.981256 126543 0.0807923)" width="37251" height="121107"/>
+  </g>
+ </g>
+</svg>

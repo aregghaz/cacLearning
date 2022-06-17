@@ -1,0 +1,46 @@
+@import "resources/frontend/styles/variables";
+.root{
+    text-align: center;
+    background-color:  $footerBackground;
+}
+.icon{
+    width: 60px;
+    margin: auto;
+    padding-top: 60px;
+}
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    color: $secondaryTitleColor;
+    margin: 20px 0;
+    height: 57px;
+    @media only screen and(max-width: $mediumDisplay) {
+        font-size: 50px;
+    }
+    @media only screen and(max-width: $smallDisplay) {
+        font-size: 45px;
+    }
+    @media only screen and(max-width: $extraSmallDisplay) {
+        font-size: 25px;
+    }
+}
+.description{
+    color: $placeHolderColor;
+    font-size: 20px;
+    @media only screen and(max-width: $mediumDisplay) {
+        font-size: 16px;
+    }
+    margin: 20px 0 35px;
+}
+.button{
+    background: $gradient;
+    padding: 20px 65px;
+    display: inline-block;
+    margin-bottom: 60px;
+    text-decoration: none;
+    color: $whiteColor;
+    border-radius: 5px;
+    &:hover{
+        background: $accentColor;
+    }
+}

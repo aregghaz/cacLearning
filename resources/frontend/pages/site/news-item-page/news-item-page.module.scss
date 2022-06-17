@@ -1,0 +1,61 @@
+@import "../../../styles/variables";
+.root{
+    background: $backgroundColor;
+}
+.news{
+    padding: 60px 0;
+}
+.selected{
+    display: flex;
+    margin-bottom: 40px;
+    @media only screen and(max-width: $smallDisplay) {
+        flex-direction: column;
+    }
+}
+
+.content{
+    width: 100%;
+    word-break: break-word;
+    @media only screen and(max-width: $smallDisplay) {
+        padding: 20px 10px 0;
+        margin-left: 0;
+    }
+}
+.title{
+    color: $accentColor;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.text{
+    color: $textColor;
+    font-size: 15px;
+    margin-bottom: 10px;
+
+}
+.date{
+    color: $placeHolderColor;
+    font-size: 13px;
+}
+.newsItems {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    @media only screen and(max-width: $smallDisplay) {
+        grid-template-columns: 1fr 1fr;
+        & div{
+            display: none;
+            &:nth-child(1), &:nth-child(2){
+                display: block;
+            }
+        }
+    }
+    @media only screen and(max-width: $extraSmallDisplay) {
+        grid-template-columns: 1fr;
+        & div{
+            display: none;
+            &:nth-child(1), &:nth-child(2){
+                display: block;
+            }
+        }
+    }
+}

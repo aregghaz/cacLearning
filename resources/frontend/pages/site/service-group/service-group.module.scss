@@ -1,0 +1,44 @@
+@import "../../../styles/variables";
+
+.text{
+    margin: 40px 0;
+
+    //Admin styles
+    table, td, th {
+        border: none!important;
+    }
+    tr {
+        @media only screen and(max-width: $smallDisplay) {
+            display: flex !important;
+            flex-direction: column !important;
+        }
+    }
+    td:first-of-type {
+        width: 100%!important;
+        border: none!important;
+        display: flex!important;
+        height: auto!important;
+        padding-right: 20px!important;
+        @media only screen and(max-width: $smallDisplay) {
+            justify-content: center !important;
+            padding-right: 0!important;
+        }
+
+        img {
+            margin-right: 20px!important;
+            width: 100%!important;
+            margin-bottom: 20px!important;
+            @media only screen and(max-width: $smallDisplay) {
+                margin-right: 0 !important;
+            }
+        }
+    }
+    td:nth-of-type(2) {
+        width: 60% !important;
+        vertical-align: top;
+
+        @media only screen and(max-width: $smallDisplay) {
+            width: 100% !important;
+        }
+    }
+}

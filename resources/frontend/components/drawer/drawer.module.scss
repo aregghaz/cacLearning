@@ -1,0 +1,130 @@
+@import "../../styles/variables";
+
+.root {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: $drawerBgColor;
+    overflow-x: hidden;
+    transition: 0.5s;
+    margin: 110px 20px 20px;
+    box-shadow: $adminBoxShadow;
+    &.fixed{
+        height: calc(100% - 140px);
+    }
+}
+
+.logos {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    margin: 15px 0 10px;
+}
+
+.link {
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+    white-space: nowrap;
+    color: $midGrey;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.closeIcon {
+    position: absolute;
+    top: 10px;
+    left: 190px;
+    width: 30px;
+    margin-left: 50px;
+    transition: 0.5s;
+    z-index: 9000;
+}
+
+.openIcon {
+    width: 50px;
+    position: absolute;
+    top: 10px;
+    padding: 0 11px;
+    z-index: 9000;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+.listIcon{
+    position: absolute;
+    width: 70px;
+    padding: 6px 16px;
+}
+
+.secondaryLink{
+    font-size: 16px;
+    margin-left: 20px;
+    width: 260px;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.list{
+    margin-top: 30px;
+}
+
+.headerNav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-bottom: 80px;
+    padding: 23px 40px;
+    color: #fff;
+    background-color: $grayColor;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+.account{
+    display: flex;
+    line-height: 31px;
+}
+
+.icon{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    :global{
+        svg{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.iconBlock{
+    &+&{
+        margin-left: 20px;
+    }
+}
+
+.icons{
+    display: flex;
+}

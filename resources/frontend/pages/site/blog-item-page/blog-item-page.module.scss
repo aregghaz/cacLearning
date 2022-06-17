@@ -1,0 +1,99 @@
+@import "resources/frontend/styles/variables";
+.root{
+    background: $backgroundColor;
+}
+.blog{
+    display: flex;
+    padding: 60px 0;
+    flex-wrap: wrap;
+}
+.selected{
+    display: flex;
+    margin-bottom: 40px;
+    @media only screen and(max-width: $smallDisplay) {
+        flex-direction: column;
+    }
+}
+.imageWrapper{
+    width: 40%;
+    //padding: 0 0 0 25px;
+    @media only screen and(max-width: $smallDisplay) {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .image{
+        width: 100%;
+    }
+}
+.content{
+    width: 60%;
+    margin-left: 30px;
+    padding: 0 20px;
+    @media only screen and(max-width: $smallDisplay) {
+        width: 100%;
+        padding: 20px 10px 0;
+        margin-left: 0;
+    }
+}
+.title{
+    color: $accentColor;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-width: bold;
+}
+.text{
+    color: $textColor;
+    font-size: 15px;
+    margin-bottom: 10px;
+    word-break: break-all;
+}
+.position{
+    color: $placeHolderColor;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    position: relative;
+
+}
+
+.like {
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        svg {
+            path {
+                fill: $accentColor;
+            }
+        }
+    }
+}
+
+.likes {
+    padding: 0 20px 0 10px;
+}
+.blogItems {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    @media only screen and(max-width: $smallDisplay) {
+        grid-template-columns: 1fr 1fr;
+        & div{
+            display: none;
+            &:nth-child(1), &:nth-child(2){
+                display: block;
+            }
+        }
+
+
+    }
+}
+.author{
+    font-size: 18px;
+    color: $textColor;
+    margin: 10px 0;
+}

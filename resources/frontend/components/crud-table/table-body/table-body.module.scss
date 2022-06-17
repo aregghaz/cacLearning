@@ -1,0 +1,36 @@
+@import "../../../styles/variables";
+
+.tbody{
+    font-size: 15px;
+}
+
+.icon {
+    display: block;
+    width: 25px;
+    height: 25px;
+}
+
+.actions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media only screen and (max-width: $smallDisplay) {
+        flex-direction: column;
+    }
+}
+
+.editButton{
+    display: block;
+}
+
+.rubleSign{
+    display: inline-block;
+    width: 13px;
+}
+
+.link {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 0 auto;
+}

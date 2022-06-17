@@ -1,0 +1,92 @@
+@import "../../styles/variables";
+.root{
+    :global{
+        .swiper-button-next, .swiper-button-prev{
+            &:after{
+                color: $whiteColor;
+            }
+            @media only screen and(max-width: $smallDisplay) {
+                display: none;
+            }
+        }
+        .swiper-pagination-bullet-active,
+        .swiper-pagination-bullet{
+            background-color: $whiteColor;
+        }
+        .swiper-pagination-bullets{
+            margin-bottom: 15px;
+        }
+    }
+    @media only screen and(max-width: $smallDisplay) {
+        height: 100vh;
+    }
+}
+.slide{
+    width: 100%;
+}
+.image{
+    width: 100%;
+    /*height: 690px;*/
+    height: 100vh;
+    object-fit: cover;
+    object-position: top;
+    @media only screen and(max-width: $mediumDisplay) {
+        width: 100%;
+        height: 70vh;
+    }
+    @media only screen and(max-width: $smallDisplay) {
+        height: 100vh;
+    }
+}
+.about{
+    position: absolute;
+    bottom: 30%;
+    width: 100%;
+    padding: 0 5%;
+    top: calc(50% - 100px);
+    @media only screen and(max-width: $mediumDisplay) {
+        padding: 0 10%;
+    }
+}
+.title {
+    color: $whiteColor;
+    font-size: 40px;
+    max-width: 60%;
+    margin-bottom: 25px;
+    @media only screen and(max-width: $mediumDisplay) {
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+    @media only screen and(max-width: $smallDisplay) {
+        max-width: 100%;
+        font-size: 35px;
+    }
+}
+.text{
+    color: $whiteColor;
+    font-size: 20px;
+    max-width: 70%;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    @media only screen and(max-width: $mediumDisplay) {
+        font-size: 18px;
+    }
+    @media only screen and(max-width: $smallDisplay) {
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+}
+.button{
+    padding: 15px 40px;
+    border-radius: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    background: linear-gradient(89.73deg, $accentColor 0.16%, rgba(103, 211, 192, 0.8) 99.72%);
+    color: $whiteColor;
+    border: none;
+    &:hover{
+        background: $accentColor ;
+    }
+}

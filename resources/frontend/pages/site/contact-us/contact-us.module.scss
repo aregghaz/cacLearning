@@ -1,0 +1,57 @@
+@import "resources/frontend/styles/variables";
+.root{
+    background: $backgroundColor;
+}
+
+.container{
+    display: flex;
+    padding: 60px 0;
+    @media only screen and(max-width: $mediumDisplay) {
+        flex-direction: column-reverse;
+    }
+}
+.map{
+    width: 50%;
+    height: auto;
+    position: relative;
+    margin-right: 40px;
+    @media only screen and(max-width: $mediumDisplay) {
+        margin: 0 5px;
+        width: calc(100% - 10px);
+        height: 350px;
+    }
+}
+.form{
+    width: 50%;
+    @media only screen and(max-width: $mediumDisplay) {
+        width: 100%;
+    }
+}
+.iconWithText{
+    display: flex;
+    margin-bottom: 20px;
+}
+.text{
+    padding-left: 10px;
+    font-size: 15px;
+    color: $textColor;
+    display: flex;
+    align-items: center;
+}
+.address{
+    display: flex;
+    align-items: center;
+}
+.number{
+    padding-right: 8px;
+    a{
+        color: $textColor;
+        text-decoration: none;
+    }
+}
+.text{
+    a{
+        color: $textColor;
+        text-decoration: none;
+    }
+}

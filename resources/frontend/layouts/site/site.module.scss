@@ -1,0 +1,20 @@
+@import '../../styles/variables';
+
+.main {
+    position: relative;
+    min-height: calc(100vh - 200px);
+}
+
+.menu {
+    margin: 25px 0;
+}
+.call{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 7;
+    display: none;
+    @media only screen and (max-width: $smallDisplay) {
+        display: block;
+    }
+}

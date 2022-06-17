@@ -1,0 +1,52 @@
+@import "resources/frontend/styles/variables";
+.root{
+    position: relative;
+}
+.share {
+    position: relative;
+    cursor: pointer;
+}
+
+.popup {
+    min-width: 200px;
+    padding: 10px;
+    background: $whiteColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    z-index: 2;
+    bottom: 40px;
+    border-radius: 4px;
+    box-shadow: $boxshadow;
+}
+
+.shareText {
+    margin-bottom: 10px;
+    color: $textColor;
+}
+
+.shareIcons {
+    display: flex;
+}
+
+.shareButton {
+    margin: 0 5px;
+}
+
+.copy {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 ;
+}
+
+.copyLink {
+    padding-right: 15px;
+    color: $placeHolderColor;
+}
+
+.copyButton {
+    color: $accentColor;
+    font-width: bold;
+}

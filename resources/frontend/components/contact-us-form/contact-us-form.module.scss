@@ -1,0 +1,57 @@
+@import "resources/frontend/styles/variables";
+.container{
+    width: 100%;
+}
+.inputWrapper {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    @media only screen and(max-width: $smallDisplay) {
+        flex-direction: column;
+    }
+}
+.input {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    //@media only screen and(max-width: $mediumDisplay) {
+    //    width: 25%;
+    //}
+    @media only screen and(max-width: $smallDisplay) {
+        border-right: none;
+        width: 100%;
+    }
+}
+.textarea{
+    display: flex;
+    width: 100%;
+}
+.inputBase, .textareaBase {
+    background-color: $whiteColor;
+    border: 1px solid $dateBorderColor ;
+    width: 100%;
+    padding: 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    position: relative;
+    color: $placeHolderColor;
+    margin: 5px;
+    resize: none;
+    outline: none;
+    &::placeholder {
+        color: $placeHolderColor;
+    }
+}
+.buttonWrapper{
+    margin: 5px 5px 20px;
+}
+.button{
+    background: linear-gradient(
+            89.73deg
+        , #16968B 0.16%, rgba(103, 211, 192, 0.8) 99.72%);
+    &:hover{
+        background-color: #16968B;
+    }
+}

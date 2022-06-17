@@ -1,0 +1,76 @@
+@import "resources/frontend/styles/variables";
+.root{
+    position: relative;
+    :global{
+        .swiper-button-next, .swiper-button-prev{
+            &:after{
+                color: $accentColor;
+            }
+            @media only screen and(max-width: $smallDisplay) {
+                display: none;
+            }
+        }
+        .swiper-pagination-bullet-active,
+        .swiper-pagination-bullet{
+            background-color: $accentColor;
+        }
+    }
+}
+.swiperButtonPrev{
+    position: absolute;
+    top: 45%;
+    left: -60px;
+}
+.swiperButtonNext{
+    position: absolute;
+    top: 45%;
+    right: -60px;
+}
+.slide{
+    box-shadow: $boxshadow;
+    background-color: $whiteColor;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 350px;
+    padding: 35px 10px;
+    margin: 70px auto;
+    text-decoration: none;
+    transition: 0.5s;
+    @media only screen and(max-width: $mediumDisplay) {
+        margin: 50px auto 70px;
+    }
+    @media only screen and(max-width: $smallDisplay) {
+        max-width: unset;
+        height: 200px;
+        margin: 20px auto 70px;
+    }
+    &:hover{
+        background: $accentColor;
+        box-shadow: 0px 1px 30px #cbcbcb;
+        .image{
+            filter: brightness(999) saturate(999) grayscale(999);
+        }
+        .title{
+            color: $whiteColor;
+        }
+    }
+}
+.image{
+    height: 80px;
+    @media only screen and(max-width: $smallDisplay) {
+        height: 65px
+    }
+}
+.title{
+    padding-top: 25px;
+    text-align: center;
+    color: $cardTextColor;
+    font-weight: bold;
+    line-height: 1.5;
+    @media only screen and(max-width: $smallDisplay) {
+        font-size: 7px;
+    }
+}

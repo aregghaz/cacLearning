@@ -1,0 +1,100 @@
+@import "resources/frontend/styles/variables";
+.newsItem{
+    display: block;
+    background: $whiteColor;
+    box-shadow: $boxshadow;
+    margin: 20px 10px;
+    text-decoration: none;
+    @media only screen and(max-width: $smallDisplay) {
+        margin: 10px;
+    }
+    &:hover{
+        background: $footerBackground;
+    }
+}
+.image{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 0 20%;
+    @media only screen and(max-width: $smallDisplay) {
+        height: auto;
+    }
+}
+.content{
+    position: relative;
+    padding: 30px;
+    @media only screen and(max-width: $smallDisplay) {
+        padding: 20px;
+    }
+}
+.date{
+    position: absolute;
+    top: -25px;
+    right: 10px;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    background: $whiteColor;
+    border: 1px solid $dateBorderColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media only screen and(max-width: $smallDisplay) {
+        width: 38px;
+        height: 40px;
+    }
+}
+.day{
+    color: $textColor;
+    font-size: 18px;
+    font-weight: bold;
+    @media only screen and(max-width: $smallDisplay) {
+        font-size: 14px;
+    }
+}
+.month{
+    color: $textColor;
+    font-size: 14px;
+    font-weight: bold;
+    @media only screen and(max-width: $smallDisplay) {
+        font-size: 12px;
+    }
+}
+.title{
+    color: $titleColor;
+    font-size: 16px;
+    font-weight: bold;
+    @media only screen and(max-width: $smallDisplay) {
+        font-size: 14px;
+        padding-top: 10px;
+    }
+}
+.text{
+    color: $textColor;
+    font-size: 14px;
+    margin: 10px 0;
+    line-height: 1.7;
+    height: 65px;
+    max-height: 65px;
+    overflow: hidden;
+    @media only screen and(max-width: $smallDisplay) {
+        font-size: 12px;
+    }
+}
+.button{
+    color: $accentColor;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.icon{
+    height: 15px;
+}
+.readMore{
+    padding-right: 10px;
+    @media only screen and(max-width: $smallDisplay) {
+        font-size: 14px;
+    }
+}

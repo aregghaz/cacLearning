@@ -1,0 +1,163 @@
+@import "../../../../styles/variables";
+
+.footer {
+    background-color: $footerBackground;
+    padding: 80px 0 0;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.linkWrapper {
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 25px;
+    text-decoration: none;
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 20px;
+        width: 5px;
+        background: $dateBorderColor;
+    }
+    &:hover {
+        &:after {
+            background: $accentColor;
+        }
+    }
+}
+.link {
+    text-decoration: none;
+    color: $textColor;
+    font-size: 15px;
+}
+.col {
+    padding-bottom: 20px;
+    &:nth-child(1) {
+        width: 30%;
+        @media only screen and (max-width: $mediumDisplay) {
+            width: 50%;
+        }
+        @media only screen and (max-width: $smallDisplay) {
+            width: 100%;
+        }
+    }
+    &:nth-child(2) {
+        width: 30%;
+        @media only screen and (max-width: $mediumDisplay) {
+            width: 50%;
+        }
+        @media only screen and (max-width: $smallDisplay) {
+            width: 100%;
+        }
+    }
+    &:nth-child(3) {
+        width: 40%;
+        padding: 0 20px;
+        @media only screen and (max-width: $mediumDisplay) {
+            width: 70%;
+            padding: 0;
+        }
+        @media only screen and (max-width: $smallDisplay) {
+            width: 100%;
+        }
+    }
+}
+.iconWithText {
+    display: flex;
+    margin-bottom: 20px;
+
+    &:hover {
+        svg path {
+            fill: $accentColor;
+        }
+    }
+}
+.text {
+    padding-left: 10px;
+    font-size: 15px;
+    color: $textColor;
+}
+.address {
+    display: flex;
+    align-items: center;
+}
+.newsletter {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    position: relative;
+    margin-top: 25px;
+}
+.input {
+    padding: 17px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 100%;
+    &::placeholder {
+        color: $placeHolderColor;
+    }
+}
+.button {
+    font-size: 12px;
+    padding: 0 10px;
+}
+.subscribeText {
+    margin-bottom: 15px;
+    display: block;
+    color: $textColor;
+    font-size: 15px;
+}
+.socials {
+    color: $textColor;
+    font-size: 15px;
+}
+.socialIcon {
+    display: inline-block;
+    margin-top: 15px;
+    &:nth-child(2) {
+        margin: 0 10px;
+        padding: 0 8px;
+    }
+    &:nth-child(3) {
+        margin: 0 15px 0 0;
+    }
+    &:hover {
+        svg path {
+            fill: $accentColor;
+        }
+    }
+}
+.reserved {
+    text-align: center;
+    color: $dateBorderColor;
+    margin-top: 45px;
+    padding: 20px 0;
+    border-top: 1px solid $dateBorderColor;
+}
+.text {
+    a {
+        color: $textColor;
+        text-decoration: none;
+    }
+}
+.created {
+    display: flex;
+    justify-content: center;
+    color: $placeHolderColor;
+    text-decoration: none;
+    font-size: 14px;
+    width: 350px;
+    margin: auto;
+}
+.heart {
+    width: 15px;
+    height: 15px;
+    margin: 0 10px;
+    svg {
+        width: 100%;
+    }
+}

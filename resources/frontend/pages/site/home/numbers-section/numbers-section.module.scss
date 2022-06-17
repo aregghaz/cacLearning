@@ -1,0 +1,103 @@
+@import "resources/frontend/styles/variables";
+
+.numbersBG {
+    width: 100%;
+    background-image: url('/images/numbers-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    margin: 80px 0 65px;
+    @media only screen and(max-width: $mediumDisplay) {
+        height: 290px;
+    }
+}
+
+.numbers {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.numberWrapper {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    &:last-child{
+        .numberDescription{
+            @media only screen and(max-width: $extraSmallDisplay) {
+                &:last-child{
+                    padding: 0 25px;
+                }
+            }
+        }
+    }
+    &+& {
+        border-left: 2px solid $accentColor;
+    }
+
+    &:nth-child(2) {
+        padding: 0 60px;
+        @media only screen and(max-width: $mediumDisplay) {
+            padding: 0 40px;
+        }
+        @media only screen and(max-width: $mediumDisplay) {
+            padding: 0 30px;
+        }
+        @media only screen and(max-width: $smallDisplay) {
+            padding: 0 15px;
+        }
+        @media only screen and(max-width: $extraSmallDisplay) {
+            padding: 0 10px;
+        }
+    }
+
+
+    span {
+        font-size: 65px;
+        position: relative;
+        color: $secondaryTitleColor;
+        font-weight: bold;
+        @media only screen and(max-width: $mediumDisplay) {
+            font-size: 50px;
+        }
+        @media only screen and(max-width: $smallDisplay) {
+            font-size: 45px;
+        }
+        @media only screen and(max-width: $extraSmallDisplay) {
+            font-size: 25px;
+        }
+    }
+}
+
+.sup{
+    top: -50px;
+    color: $secondaryTitleColor;
+    margin-left: 10px;
+    font-size: 23px;
+    font-weight: bold;
+    @media only screen and(max-width: $mediumDisplay) {
+        font-size: 18px;
+        top: -40px;
+    }
+    @media only screen and(max-width: $smallDisplay) {
+        font-size: 16px;
+        top: -35px;
+    }
+    @media only screen and(max-width: $extraSmallDisplay) {
+        font-size: 14px;
+        top: -17px;
+        margin-left: 5px;
+    }
+}
+.numberDescription {
+    color: $placeHolderColor;
+    margin-top: 10px;
+    @media only screen and(max-width: $smallDisplay) {
+        font-size: 13px;
+    }
+    @media only screen and(max-width: $extraSmallDisplay) {
+        font-size: 12px;
+    }
+}

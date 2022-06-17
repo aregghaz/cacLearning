@@ -1,0 +1,106 @@
+@import "resources/frontend/styles/variables";
+
+.root{
+.content{
+    margin: 40px 0;
+}
+    :global {
+        .aboutUsTextImg{
+            display: flex;
+            .aboutUsText {
+                padding-left: 20px;
+            }
+        }
+        .aboutUsText{
+            color: $textColor;
+            line-height: 1.5;
+            img{
+                float: left;
+                padding-right: 25px;
+            }
+        }
+        .aboutUsItem{
+            color: $textColor;
+            line-height: 1.5;
+            position: relative;
+            padding: 10px 0px 0px 20px;
+            &:before{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 12.5px;
+                width: 5px;
+                height: 20px;
+                background: $accentColor;
+            }
+            &:last-child{
+                &:before{
+                    display: none;
+                }
+                padding: 10px 0 0 0;
+                @media only screen and (max-width: $mediumDisplay) {
+                    padding: 0
+                }
+            }
+        }
+        .aboutUsImgRow{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            &>img{
+                width: 30%;
+                @media only screen and (max-width: $smallDisplay) {
+                    width: 49%;
+                    height: 110px;
+                    margin-bottom: 10px;
+                }
+
+
+            }
+        }
+
+        .grid {
+            //display: grid;
+            //grid-template-columns: 30% 70%;
+            //grid-template-rows: auto;
+            //grid-auto-flow: column;
+            //@media only screen and (max-width: $smallDisplay) {
+            //    grid-template-columns: 40% 60%;
+            //}
+        }
+        .itema,
+        .itemb,
+        .itemc{
+            //background-color: gray;
+        }
+        .itema {
+            display: none;
+            grid-column: 1;
+            grid-row: 1 / 3;
+            img{
+                width: 100%;
+            }
+        }
+        .itemb{
+            //padding-left: 20px;
+        }
+        .itemc {
+            //padding-left: 20px;
+            @media only screen and (max-width: $mediumDisplay) {
+                padding-left: 0;
+                grid-column: 1 /3;
+            }
+        }
+
+    }
+}
+.content{
+    margin-top: 40px;
+
+    img {
+        width: 90%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+

@@ -1,0 +1,17 @@
+@import "resources/frontend/styles/variables";
+.root{
+    background: $backgroundColor;
+    min-height: 81vh;
+}
+.blog{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    @media only screen and(max-width: $smallDisplay) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.text{
+    color: $placeHolderColor;
+    margin: 60px 0 20px;
+}

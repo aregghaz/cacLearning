@@ -1,0 +1,12 @@
+@import "../../../styles/variables";
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+.label {
+    color: $adminTextColor;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,138 @@
+@import "resources/frontend/styles/variables";
+.blogItem {
+
+    margin: 20px 10px;
+    text-decoration: none;
+    @media only screen and(max-width: $smallDisplay) {
+
+        margin: 10px;
+    }
+}
+
+.image {
+    width: 100%;
+}
+
+.content {
+    width: 50%;
+    padding: 0 0 0 60px;
+    @media only screen and(max-width: $smallDisplay) {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+.text {
+    color: $textColor;
+    line-height: 1.7;
+    font-size: 14px;
+    word-break: break-all;
+}
+
+.title {
+    position: relative;
+    color: $textColor;
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    margin: 20px 20px 20px 0;
+    text-decoration: none;
+    @media only screen and(max-width: $smallDisplay) {
+        margin: 10px 0;
+        font-size: 12px;
+    }
+    &:after{
+        position: absolute;
+    }
+}
+
+.button {
+    color: $accentColor;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.readMore {
+    padding-right: 10px;
+    @media only screen and(max-width: $smallDisplay) {
+        font-size: 14px;
+    }
+}
+
+.icon {
+    height: 15px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    position: relative;
+
+}
+
+.like {
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        svg {
+            path {
+                fill: $accentColor;
+            }
+        }
+    }
+}
+
+.likes {
+    padding: 0 20px 0 10px;
+}
+
+.share {
+    position: relative;
+    cursor: pointer;
+}
+
+.popup {
+    padding: 10px;
+    background: $whiteColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    z-index: 2;
+    bottom: 40px;
+    border-radius: 4px;
+    box-shadow: $boxshadow;
+}
+
+.shareText {
+    margin-bottom: 10px;
+    color: $textColor;
+}
+
+.shareIcons {
+    display: flex;
+}
+
+.shareButton {
+    margin: 0 5px;
+}
+
+.copy {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 ;
+}
+
+.copyLink {
+    padding-right: 15px;
+    color: $placeHolderColor;
+}
+
+.copyButton {
+    color: $accentColor;
+    font-width: bold;
+}

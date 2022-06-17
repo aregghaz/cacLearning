@@ -1,0 +1,268 @@
+@import "../../../../styles/variables";
+.header {
+    width: 100%;
+    z-index: 6;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1950px;
+    @media only screen and (max-width: $smallDisplay) {
+        height: 65px;
+        position: fixed;
+        background: rgba(90, 109, 106, 0.7);
+        top: 0;
+        width: 100%;
+        z-index: 6;
+    }
+
+}
+.scrolled{
+    background: rgba(90, 109, 106, 0.7);
+}
+
+.blur, .scrolled {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.opened{
+    .logoDisplay{
+        @media only screen and (max-width: $smallDisplay) {
+           display: none;
+        }
+    }
+}
+@supports not ((backdrop-filter: blur(5px)) or (-webkit-backdrop-filter: blur(5px))) {
+    .blur, .scrolled {
+        background-color: initial;
+        -webkit-transition: all .25s ease-in-out;
+        -moz-transition: all .25s ease-in-out;
+        transition: all .25s ease-in-out;
+        opacity: 0;
+    }
+}
+
+.full {
+    .mobileMenuItems {
+        width: 100%;
+    }
+}
+
+.LogoScroll {
+    display: none;
+    @media only screen and (max-width: $smallDisplay) {
+        display: flex
+    }
+}
+
+.logoDisplay {
+    // opacity: 0;
+    padding: 0 0 0 55px;
+    height: 90px;
+    max-width: 190px;
+    display: flex;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    z-index: 999;
+    @media only screen and (max-width: $mediumDisplay) {
+        padding: 0 0 0 15px;
+        max-width: 145px;
+    }
+    @media only screen and (max-width: $smallDisplay) {
+        height: 65px;
+        display: flex;
+        align-self: center;
+        max-width: 110px;
+    }
+    svg {
+        height: 50px;
+        width: 100%;
+        //@media only screen and (max-width: $smallDisplay) {
+        //    path {
+        //        fill: #fff;
+        //    }
+        //}
+    }
+}
+
+.logoDisplayLink {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+
+.logo {
+    min-width: 170px;
+}
+
+.menuItems {
+    height: inherit;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    align-items: center;
+    float: right;
+    font-size: 20px;
+    color: white;
+    padding: 0 55px 0 0;
+    @media only screen and (max-width: 1550px) {
+        font-size: 16px;
+    }
+    @media only screen and (max-width: $mediumDisplay) {
+        font-size: 15px;
+        padding: 0 15px 0 0;
+    }
+    @media only screen and (max-width: $smallDisplay) {
+        justify-content: space-between;
+        width: 60px;
+    }
+}
+
+.mobileMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    font-size: 25px;
+    z-index: 3;
+    overflow-y: auto;
+}
+
+.openMenu {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    svg {
+        width: 100%;
+    }
+}
+
+.closeMenu {
+    width: 30px;
+    height: auto;
+    overflow: hidden;
+    margin: 30px 30px 0;
+    z-index: 9;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    @media only screen and (max-width: $smallDisplay) {
+        margin: 20px 30px 0;
+    }
+    svg {
+        width: 100%;
+    }
+}
+
+.mobileMenuItems {
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    display: flex;
+    display: -webkit-flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    margin: 0 0 0 auto;
+    width: 80%;
+    @media only screen and (max-width: $smallDisplay) {
+        width: 100%
+    }
+}
+
+.menuItem {
+    color: $whiteColor;
+    cursor: pointer;
+    padding-top: 5px;
+    margin: 15px;
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    a, p {
+        color: $whiteColor;
+        text-decoration: none;
+        &:hover{
+            color: $whiteColor;
+            font-weight: bold;
+        }
+        &:before {
+            display: block;
+            content: attr(title);
+            font-weight: bold;
+            height: 0;
+            overflow: hidden;
+            visibility: hidden;
+        }
+    }
+    @media only screen and (max-width: $smallDisplay) {
+        margin: 10px;
+    }
+}
+.mobileMenuItems{
+    .menuItem{
+        height: auto;
+        flex-flow: column;
+    }
+}
+.hasSubmenu{
+    padding: 20px 0 15px 0;
+    cursor: context-menu;
+    @media only screen and (max-width: $mediumDisplay) {
+        padding: 20px 0 15px;
+    }
+}
+.submenu{
+    position: absolute;
+    background: rgba(90, 109, 106, 0.7);
+    padding: 10px 20px 20px;
+    top: 90px;
+    left: 0;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    opacity: 0;
+    transition: 0.5s;
+}
+.scrolled{
+    .submenu{
+        left: -3px;
+    }
+}
+.submenuMobile{
+
+}
+.submenuItem{
+    display: block;
+    margin: 15px 0 0;
+    font-size: 16px;
+    white-space: nowrap;
+    &:hover{
+
+    }
+}
+.hasSubmenu{
+    &:hover{
+        .submenu{
+            opacity: 1;
+        }
+    }
+}
+.search{
+    @media only screen and (max-width: $smallDisplay) {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+    }
+}

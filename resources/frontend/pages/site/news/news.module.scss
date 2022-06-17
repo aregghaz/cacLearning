@@ -1,0 +1,15 @@
+@import "../../../styles/variables";
+.root{
+    background: $backgroundColor;
+}
+.news{
+    padding: 60px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    @media only screen and(max-width: $smallDisplay) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media only screen and(max-width: $extraSmallDisplay) {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,75 @@
+@import "../../../styles/variables";
+
+.root {
+    position: relative;
+    font-family: inherit;
+    font-size: inherit;
+    color: $adminTextColor;
+    cursor: pointer;
+
+    & * {
+        pointer-events: none;
+    }
+
+    & > input {
+        z-index: -1;
+        opacity: 0;
+        width: 0;
+    }
+
+    .indicator {
+        position: relative;
+        display: inline-block;
+        width: 1.2rem;
+        height: 1rem;
+        border: 1px solid $adminTextColor;
+        color: $adminTextColor;
+    }
+
+    & > input:checked ~ .indicator::after {
+        content: $checkbox;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $adminTextColor;
+    }
+
+    & > input:focus {
+        outline-color: transparent;
+    }
+
+    & > input:focus ~ .indicator {
+        box-shadow: 1px 1px $boxshadowColor;
+    }
+
+    & > input:focus ~ label {
+        text-shadow: 0 1px $boxshadowColor;
+    }
+
+    & > input:disabled ~ .checkboxIndicator {
+        box-shadow: none;
+        color: $disabledColor;
+        border-color: currentColor;
+
+    }
+}
+
+
+.label {
+    input:disabled ~ & {
+        color: $disabledColor;
+    }
+    font-size: 16px;
+    margin-left: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    @media only screen and (max-width: $smallDisplay) {
+        font-size: 14px;
+    }
+}
+
+

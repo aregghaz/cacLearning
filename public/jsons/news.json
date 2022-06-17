@@ -1,0 +1,92 @@
+[
+    {
+        "img": "/images/news1.png",
+        "title": "Lorem Ipsum Lorem IpsumIpsum",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "buttonLink": "/newsItem",
+        "date": {
+            "day": 22,
+            "month": "SEP"
+        }
+    },
+    {
+        "img": "/images/news2.png",
+        "title": "Lorem Ipsum Lorem IpsumIpsum",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "buttonLink": "/newsItem",
+        "date": {
+            "day": 22,
+            "month": "SEP"
+        }
+    },
+    {
+        "img": "/images/news3.png",
+        "title": "Lorem Ipsum Lorem IpsumIpsum",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "buttonLink": "/newsItem",
+        "date": {
+            "day": 22,
+            "month": "SEP"
+        }
+    },
+    {
+        "img": "/images/news1.png",
+        "title": "Lorem Ipsum Lorem IpsumIpsum",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "buttonLink": "/newsItem",
+        "date": {
+            "day": 22,
+            "month": "SEP"
+        }
+    },
+    {
+        "img": "/images/news2.png",
+        "title": "Lorem Ipsum Lorem IpsumIpsum",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "buttonLink": "/newsItem",
+        "date": {
+            "day": 22,
+            "month": "SEP"
+        }
+    },
+    {
+        "img": "/images/news3.png",
+        "title": "Lorem Ipsum Lorem IpsumIpsum",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "buttonLink": "/newsItem",
+        "date": {
+            "day": 22,
+            "month": "SEP"
+        }
+    },
+    {
+        "img": "/images/news1.png",
+        "title": "Lorem Ipsum Lorem IpsumIpsum",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "buttonLink": "/newsItem",
+        "date": {
+            "day": 22,
+            "month": "SEP"
+        }
+    },
+    {
+        "img": "/images/news2.png",
+        "title": "Lorem Ipsum Lorem IpsumIpsum",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "buttonLink": "/newsItem",
+        "date": {
+            "day": 22,
+            "month": "SEP"
+        }
+    },
+    {
+        "img": "/images/news3.png",
+        "title": "Lorem Ipsum Lorem IpsumIpsum",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "buttonLink": "/newsItem",
+        "date": {
+            "day": 22,
+            "month": "SEP"
+        }
+    }
+]

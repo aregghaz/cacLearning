@@ -1,0 +1,72 @@
+@import "resources/frontend/styles/variables";
+
+.root {
+    position: relative;
+}
+
+.breadcrumbs {
+    margin-top: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.image {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    @media only screen and(max-width: $mediumDisplay) {
+        height: 300px;
+        object-position: left;
+    }
+}
+
+.content {
+    position: absolute;
+    top: 40%;
+    padding: 0 10%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.title {
+    color: $whiteColor;
+    font-size: 50px;
+    font-weight: unset;
+    @media only screen and(max-width: $mediumDisplay) {
+        font-size: 35px;
+    }
+    @media only screen and(max-width: $smallDisplay) {
+        font-size: 25px;
+    }
+}
+
+.breadcrumbs {
+    color: $whiteColor;
+    cursor: pointer;
+    font-size: 14px;
+
+    a {
+        color: $whiteColor;
+        text-decoration: none;
+
+        &:hover {
+            font-weight: bold;
+        }
+    }
+
+    @media only screen and(max-width: $mediumDisplay) {
+        font-size: 13px;
+    }
+    @media only screen and(max-width: $smallDisplay) {
+        font-size: 12px;
+    }
+}
+
+.divider {
+    padding: 0 10px;
+}
+
+.current {
+    font-weight: bold;
+}
